@@ -19,7 +19,7 @@ RUN chmod +x /usr/local/bin/dumb-init
 # Download latest Lighthouse from npm.
 # cache bust so we always get the latest version of LH when building the image.
 ARG CACHEBUST=1
-RUN npm i lighthouse -g
+RUN npm i lighthouse@next -g
 
 # Install express.
 COPY package.json .
